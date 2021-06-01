@@ -1,0 +1,10 @@
+.sidebar {
+    grid-area: nav;
+    background-color: burlywood;
+    margin: 0 0 0 0;
+
+}
+
+.item {
+    color: white;
+}

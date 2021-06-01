@@ -1,9 +1,9 @@
 import React from "react";
-import '../App.css';
+import s from './ProfileCSS.module.css';
 
 const Profile = () => {
   return (
-    <div className={'content'}>
+    <div className={s.content}>
       <div>
         <img src='https://vjoy.cc/wp-content/uploads/2019/08/1-22.jpg' alt="image"/>
       </div>
@@ -15,11 +15,11 @@ const Profile = () => {
         <div>
           New post
         </div>
-        <div>
-          <div>
+        <div className={s.posts}>
+          <div className={s.item}>
             post1
           </div>
-          <div>
+          <div className={s.item}>
             post2
           </div>
         </div>
@@ -28,6 +28,4 @@ const Profile = () => {
   )
 }
 
-function as(sa) {
-}
 export default Profile;
