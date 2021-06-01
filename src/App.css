@@ -1,0 +1,48 @@
+.app-wrapper {
+    display: grid;
+    width: 1200px;
+    margin: auto;
+    grid-template-areas:
+"header header header"
+"nav content content";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+
+}
+
+.header {
+    grid-area: header;
+    background-color: green;
+}
+
+.header img {
+    width: 20px;
+}
+
+.sidebar {
+    grid-area: nav;
+    background-color: burlywood;
+    margin: 0 0 0 0;
+
+}
+
+.content {
+    grid-area: content;
+    background-color: cornflowerblue;
+}
+
+.content img {
+    width: 80%;
+}
+
+.image2 {
+    width: 10%;
+}
+
+.setting {
+    margin: 25px 0 0 0;
+}
+
+.navBar {
+    margin: 0 0 0 7px;
+}
