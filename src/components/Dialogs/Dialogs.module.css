@@ -6,11 +6,9 @@
 
 .dialogsItems {
     padding: 10px;
+    text-decoration: none;
 }
 
-.dialogsItems .active {
-    color: gold;
-}
 
 .messagesItems {
     padding: 10px;
@@ -18,4 +16,9 @@
 
 .message {
 
+}
+
+.activeLink {
+    color: gold;
+    text-decoration: none;
 }
