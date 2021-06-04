@@ -2,9 +2,15 @@
     grid-area: nav;
     background-color: burlywood;
     margin: 0 0 0 0;
+    padding: 20px;
 
 }
 
-.item {
+.item a {
     color: white;
+    text-decoration: none;
+}
+
+.item .activeLink {
+    color: gold;
 }
