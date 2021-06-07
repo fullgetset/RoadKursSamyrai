@@ -10,15 +10,21 @@ import Music from "./components/NavBar/Music/Music";
 import Settings from "./components/NavBar/Settings/Settings";
 
 
-const App = () => {
+const App = (props) => {
+
+
   return (
     <BrowserRouter>
       <div className={'app-wrapper'}>
         <Header/>
         <NavBar/>
         <div className={"app-wrapper-content"}>
-          <Route path={'/profile'} component={Profile}/>
-          <Route path={'/dialogs'} component={Dialogs}/>
+          <Route path={'/profile'} component={() => {
+            return <Profile postData={props.postData}/>
+          }}/>
+          <Route path={'/dialogs'} component={() => {
+            return <Dialogs dialogsData={props.dialogsData} messagesData={props.messagesData}/>
+          }}/>
           <Route path={'/news'} component={News}/>
           <Route path={'/music'} component={Music}/>
           <Route path={'/settings'} component={Settings}/>
