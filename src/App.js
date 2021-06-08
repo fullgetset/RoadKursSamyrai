@@ -10,6 +10,7 @@ import Music from "./components/NavBar/Music/Music";
 import Settings from "./components/NavBar/Settings/Settings";
 
 
+
 const App = (props) => {
 
 
@@ -20,8 +21,9 @@ const App = (props) => {
       <div className={"app-wrapper-content"}>
         <Route path={'/profile'} render={() => {
           return <Profile
-            state={props.state.profilePage}
-            addPost={props.addPost}/>
+            profilePage={props.state.profilePage}
+            addPost={props.addPost}
+            updateNewPostText={props.updateNewPostText}/>
         }}/>
         <Route path={'/dialogs'} render={() => {
           return <Dialogs

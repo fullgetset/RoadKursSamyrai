@@ -3,6 +3,7 @@ import s from './ProfileCSS.module.css';
 import Myposts from "./Myposts/Myposts";
 import ProfileInfo from "./Myposts/ProfileInfo/ProfileInfo";
 
+
 const Profile = (props) => {
 
   return (
@@ -10,8 +11,10 @@ const Profile = (props) => {
       <ProfileInfo/>
       <div className={s.item}>
         <Myposts
-          posts={props.state.postData}
-          addPost={props.addPost}/>
+          posts={props.profilePage.postData}
+          newPostText={props.profilePage.newPostText}
+          addPost={props.addPost}
+          updateNewPostText={props.updateNewPostText}/>
       </div>
     </div>
   )
