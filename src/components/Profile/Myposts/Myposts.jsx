@@ -8,6 +8,10 @@ const Myposts = (props) => {
       return <Post key={post.id.toString()} value={post} message={post.message} count={post.likesCount}/>
     });
 
+  let addPost = () => {
+    return alert('Hello!')
+  };
+
   return (
     <div className={s.postBlock}>
       <h3>My posts</h3>
@@ -16,7 +20,7 @@ const Myposts = (props) => {
           <textarea></textarea>
         </div>
         <div>
-          <button>Add post</button>
+          <button onClick={addPost}>Add post</button>
         </div>
       </div>
       <div className={s.posts}>

@@ -1,13 +1,11 @@
-import React from "react";
-
 let state = {
 
   profilePage: {
 
     postData: [
       {id: 1, message: 'Hi, how are you?', likesCount: 12},
-      {id: 1, message: 'It\'s my first post!', likesCount: 25},
-      {id: 1, message: 'bla bla bla', likesCount: 3}
+      {id: 2, message: 'It\'s my first post!', likesCount: 25},
+      {id: 3, message: 'bla bla bla', likesCount: 3}
     ],
   },
 
