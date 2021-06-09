@@ -31,54 +31,46 @@ let store = {
       newMessageTex: 'it-message.com',
     },
   },
-
-  getState() {
-    return this._state;
-  },
-
   _CallSubscriber() {
     console.log('State changed');
   },
 
-  addPost() {
-    let newPost = {
-      id: 5,
-      message: this._state.profilePage.newPostText,
-      likesCount: 3,
-    };
-    this._state.profilePage.postData.push(newPost);
-    this._state.profilePage.newPostText = '';
-    this._CallSubscriber(this._state);
-    /*мы вызываем эту функцию rerenderEntireTree , но она у нас пустышка . т.к. возвращает
-    консоль лог ....
-     */
+  getState() {
+    return this._state;
   },
-
-  updateNewPostText(newText) {
-    this._state.profilePage.newPostText = newText;
-    this._CallSubscriber(this._state);
-  },
-
-  addMessage() {
-    let newMessage = {
-      id: '5',
-      message: this._state.dialogsPage.newMessageTex,
-    };
-    this._state.dialogsPage.messagesData.push(newMessage);
-    this._state.dialogsPage.newMessageTex = '';
-    this._CallSubscriber(this._state);
-  },
-
-  updateNewMessageText(newMessage) {
-    this._state.dialogsPage.newMessageTex = newMessage;
-    this._CallSubscriber(this._state);
-  },
-
   subscribe(observer) {
     this._CallSubscriber = observer;
   },
 
+  dispatch(action) {
+    if (action.type === "ADD-POST") {
+      let newPost = {
+        id: 5,
+        message: this._state.profilePage.newPostText,
+        likesCount: 3,
+      };
+      this._state.profilePage.postData.push(newPost);
+      this._state.profilePage.newPostText = '';
+      this._CallSubscriber(this._state);
+    } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+      this._state.profilePage.newPostText = action.newText;
+      this._CallSubscriber(this._state);
+    } else if (action.type === "ADD-MESSAGE") {
+      let newMessage = {
+        id: '5',
+        message: this._state.dialogsPage.newMessageTex,
+      };
+      this._state.dialogsPage.messagesData.push(newMessage);
+      this._state.dialogsPage.newMessageTex = '';
+      this._CallSubscriber(this._state);
+    } else if (action.type === "UPDATE-NEW-MESSAGE-TEXT") {
+      this._state.dialogsPage.newMessageTex = action.newMessage;
+      this._CallSubscriber(this._state);
+    }
+
+  }
 }
+
 
 export default store;
 window.store = store;
