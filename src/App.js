@@ -10,7 +10,6 @@ import Music from "./components/NavBar/Music/Music";
 import Settings from "./components/NavBar/Settings/Settings";
 
 
-
 const App = (props) => {
 
 
@@ -28,7 +27,9 @@ const App = (props) => {
         <Route path={'/dialogs'} render={() => {
           return <Dialogs
             state={props.state.dialogsPage}
-            addMessage={props.addMessage}/>
+            addMessage={props.addMessage}
+            newMessageText={props.state.dialogsPage.newMessageTex}
+            updateNewMessageText={props.updateNewMessageText}/>
         }}/>
         <Route path={'/news'} component={News}/>
         <Route path={'/music'} component={Music}/>
