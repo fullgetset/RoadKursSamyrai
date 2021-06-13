@@ -1,17 +1,18 @@
 .app-wrapper {
     display: grid;
-    width: 1200px;
+    width: 100%;
     margin: auto;
     grid-template-areas:
 "header header header"
 "nav content content";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 10fr;
+    background-color: #EBEDF0;
 
 }
 
 
 .app-wrapper-content {
     grid-area: content;
-    background-color: cornflowerblue;
+    width: 80%;
 }

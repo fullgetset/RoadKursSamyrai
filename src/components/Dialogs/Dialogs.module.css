@@ -1,3 +1,5 @@
+
+
 .dialogs {
     display: grid;
     grid-template-columns: 1fr 10fr;
@@ -6,12 +8,17 @@
 
 .dialogsItems {
     padding: 10px;
+}
+
+.dialogsItems a {
     text-decoration: none;
+
 }
 
 
 .messagesItems {
     padding: 10px;
+    color: #1479fb;
 }
 
 .message {
@@ -22,9 +29,10 @@
     width: 40px;
     height: 40px;
     border-radius: 20px;
+    text-decoration: none;
 }
 
 .activeLink {
-    color: gold;
+    color: red;
     text-decoration: none;
 }

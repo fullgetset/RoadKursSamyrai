@@ -1,5 +1,5 @@
 import React from "react";
-import s from './ProfileCSS.module.css';
+import className from './ProfileCSS.module.css';
 import Myposts from "./Myposts/Myposts";
 import ProfileInfo from "./Myposts/ProfileInfo/ProfileInfo";
 
@@ -7,9 +7,9 @@ import ProfileInfo from "./Myposts/ProfileInfo/ProfileInfo";
 const Profile = (props) => {
 
   return (
-    <div className={s.items}>
+    <div className={className.items}>
       <ProfileInfo/>
-      <div className={s.item}>
+      <div className={className.item}>
         <Myposts
           posts={props.profilePage.postData}
           newPostText={props.profilePage.newPostText}

@@ -1,8 +1,38 @@
 .postBlock {
+    font-family: inherit;
+    color: #050505;
     padding: 10px;
+    background-color: #EBEDF0;
+    border-radius: 20px;
+
+    font-family: inherit;
+    color: #050505;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 
 .posts {
     margin-top: 10px;
+    color: white;
+}
+
+.postBlock button {
+    text-transform: uppercase;
+    background-color: #1479fb;
+    font-family: inherit;
+    color: #050505;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.postBlock textarea {
+    border-radius: 10px;
+    text-align: center;
+    border-color: #1479fb;
+}
+
+.newPostItem {
+    border: 1px solid red;
 }

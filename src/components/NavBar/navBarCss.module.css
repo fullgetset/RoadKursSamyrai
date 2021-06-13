@@ -1,16 +1,29 @@
 .sidebar {
     grid-area: nav;
-    background-color: burlywood;
+    background-color: #EBEDF0;
     margin: 0 0 0 0;
     padding: 20px;
+
 
 }
 
 .item a {
-    color: white;
+    font-family: inherit;
+    color: #050505;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .item .activeLink {
-    color: gold;
+    color: red;
+
+}
+
+.item {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.item div {
+    padding: 20px;
 }

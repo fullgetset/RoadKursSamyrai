@@ -15,7 +15,7 @@ let store = {
         {id: 3, message: 'bla bla bla', likesCount: 3}
       ],
 
-      newPostText: 'it-kamasutra.com',
+      newPostText: 'Hello! World!',
     },
 
     dialogsPage: {

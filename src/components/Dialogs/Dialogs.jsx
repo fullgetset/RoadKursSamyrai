@@ -1,5 +1,5 @@
 import React from "react";
-import s from './Dialogs.module.css'
+import className from './Dialogs.module.css'
 import DialogItem from "./DialogsItems/DilogsItem";
 import Message from "./Message/Message";
 import {addMessageCreator, updateNewMessageTextCreator} from "../../Redux/dialogReducer";
@@ -29,11 +29,11 @@ const Dialogs = (props) => {
   };
 
   return (
-    <div className={s.dialogs}>
-      <div className={s.dialogsItems}>
+    <div className={className.dialogs}>
+      <div className={className.dialogsItems}>
         {dialogsElements}
       </div>
-      <div className={s.messagesItems}>
+      <div className={className.messagesItems}>
         <div>{messagesElements}</div>
 
         <div>

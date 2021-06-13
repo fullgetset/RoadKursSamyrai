@@ -1,3 +1,15 @@
 .descriptionBlock {
+    font-family: inherit;
+    color: #050505;
+    text-decoration: none;
+    font-weight: 600;
     padding: 10px;
+
+
+    background-color: white;
+    border-radius: 20px;
+
+    margin: 10px 0 20px 0;
 }
+
+
