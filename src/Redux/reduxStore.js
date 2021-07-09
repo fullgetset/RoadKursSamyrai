@@ -6,10 +6,10 @@ import usersReducer from "./usersReducer";
 
 
 let reducers = combineReducers({
-    profilePage: profileReducer,
-    dialogsPage: dialogReducer,
-    sidebar: sidebarReducer,
-    usersPage: usersReducer,
+  profilePage: profileReducer,
+  dialogsPage: dialogReducer,
+  sidebar: sidebarReducer,
+  usersPage: usersReducer,
 });
 
 
